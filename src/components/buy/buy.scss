@@ -1,0 +1,106 @@
+.buy{
+    position: fixed;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    background:greenyellow;
+    .header{
+        width:100%;
+        height:0.6rem;
+        border:solid 1px #f0f0f0;
+        background:#fff;
+        ul{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            width:100%;
+            height:100%;
+            //左边
+            .left{
+                display: flex;
+                align-items: center;
+                span:nth-child(1){
+                    margin-left:0.1rem;
+                    img{
+                        width:0.4rem;
+                        height:0.4rem;
+                        border:100%;
+                    }
+                }
+                span:nth-child(2){
+                    display:flex;
+                    align-items: center;
+                    margin-left:0.1rem;
+                    i{
+                        font-style:normal;
+                        font-size:0.16rem;
+                        color: #ff6223;
+                    }
+                    img{
+                        width:0.11rem;
+                        height:0.11rem;
+                        margin-left:0.05rem;
+                    }
+                }
+            }
+            //右边
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right:0.16rem;
+                img:nth-child(1){
+                    width:0.21rem;
+                    height:0.23rem;
+                    margin-right:0.3rem;
+                }
+                img:nth-child(2){
+                    width:0.21rem;
+                    height:0.23rem;
+                }
+            }
+        }
+    }
+    .innerBox{
+        flex:1;
+        background:cyan;
+        .table{
+            width:100%;
+            height:0.6rem;
+            background:pink;
+            ul{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                width:100%;
+                height:100%;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width:33.3%;
+                    height:100%;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        height:100%;
+                         border-bottom:2px solid #fff;
+                        span{
+                            display: flex;
+                            align-items: center;
+                            height:100%;
+                            font-size:0.16rem;
+                            color:#a0a0a0;
+                        }
+                    }
+                    .tableActive{
+                        border-bottom:2px solid #31c4c4;
+                    }
+                }
+            }
+        }
+    }
+}
